@@ -5,7 +5,6 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private Rigidbody2D body;
-    public int jumping;
     public int jumpamount;
     [SerializeField] private int maxjumps;
     [SerializeField] private float speed;
@@ -21,8 +20,13 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) { body.velocity = new Vector2((speed * -1), body.velocity.y); }
         if ((Input.GetKeyUp(KeyCode.A)) || Input.GetKeyUp(KeyCode.D)) { body.velocity = new Vector2(0, body.velocity.y); }
        // horizontal movement
-        if (Input.GetKeyDown(KeyCode.Space) && jumpamount != 0){ body.velocity = new Vector3(body.velocity.x, jumppower); }// Jump script.
+        if (Input.GetKeyDown(KeyCode.Space) && jumpamount != 0){ body.velocity = new Vector3(body.velocity.x, jumppower); jumpamount -= 1;  }// Jump script.
+        if (jumpamount > maxjumps) { jumpamount = maxjumps; };
+
         
-        
+    }
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Floor") { jumpamount = maxjumps; }
     }
 }

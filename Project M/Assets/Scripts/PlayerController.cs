@@ -7,18 +7,13 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public Text healthText;
+    public Transform attackLoc;
+    public float attackDis = 0.5f;
+    public LayerMask enemyLayer;
 
     private int health = 100;
+    
 
-
-
-
-
-
-
-
-
-  
     [Header("Components")]
     private Rigidbody2D _rb;
     private Animator _anim;
@@ -98,9 +93,33 @@ public class PlayerController : MonoBehaviour
         _verticalDirection = GetInput().y;
         if (Input.GetButtonDown("Jump")) _jumpBufferCounter = _jumpBufferLength;
         else _jumpBufferCounter -= Time.deltaTime;
-        if (Input.GetButtonDown("Dash")) _dashBufferCounter = _dashBufferLength;
+        if (Input.GetButtonDown("Fire1")) _dashBufferCounter = _dashBufferLength;
         else _dashBufferCounter -= Time.deltaTime;
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Attack();
+        }
         Animation();
+    }
+
+    private void Attack()
+    {
+        Debug.Log("Attack Attempted");
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackLoc.position, attackDis, enemyLayer);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("Enemy Hit: " + enemy.name);
+        }
+
+
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackLoc == null)
+            return;
+
+        Gizmos.DrawWireSphere(attackLoc.position, attackDis);
     }
 
     private void FixedUpdate()

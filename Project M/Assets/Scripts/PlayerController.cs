@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask enemyLayer;
 
     private int health = 100;
-    
+    private int iFrame = 0;
 
     [Header("Components")]
     private Rigidbody2D _rb;
@@ -89,6 +89,9 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if(iFrame > 0)
+            iFrame -= 1;
+
         _horizontalDirection = GetInput().x;
         _verticalDirection = GetInput().y;
         if (Input.GetButtonDown("Jump")) _jumpBufferCounter = _jumpBufferLength;
@@ -177,17 +180,18 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && iFrame == 0)
         {
             health -= 10;
+            iFrame = 300;
             UpdateHealth();
         }
     }
 
     private void UpdateHealth()
     {
-        healthText.text = "Heath: " + health.ToString();
-
+        healthText.text = "Heath: " + health.ToString() + "   (I-Frame: " + iFrame.ToString() + ")";
+        //healthText.text = "Heath: " + health.ToString();
 
     }
 

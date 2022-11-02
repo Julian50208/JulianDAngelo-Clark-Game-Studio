@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3991856326821229432}
   m_Layer: 0
-  m_Name: Fairy Parent
+  m_Name: Fairy (Move)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

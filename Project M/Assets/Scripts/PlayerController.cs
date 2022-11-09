@@ -7,18 +7,13 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     public Text healthText;
+    public Transform attackLoc;
+    public float attackDis = 0.5f;
+    public LayerMask enemyLayer;
 
     private int health = 100;
+    private int iFrame = 0;
 
-
-
-
-
-
-
-
-
-  
     [Header("Components")]
     private Rigidbody2D _rb;
     private Animator _anim;
@@ -94,13 +89,40 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        if(iFrame > 0)
+            iFrame -= 1;
+
         _horizontalDirection = GetInput().x;
         _verticalDirection = GetInput().y;
         if (Input.GetButtonDown("Jump")) _jumpBufferCounter = _jumpBufferLength;
         else _jumpBufferCounter -= Time.deltaTime;
-        if (Input.GetButtonDown("Dash")) _dashBufferCounter = _dashBufferLength;
+        if (Input.GetButtonDown("Fire1")) _dashBufferCounter = _dashBufferLength;
         else _dashBufferCounter -= Time.deltaTime;
+        if (Input.GetButtonDown("Fire2"))
+        {
+            Attack();
+        }
         Animation();
+    }
+
+    private void Attack()
+    {
+        Debug.Log("Attack Attempted");
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackLoc.position, attackDis, enemyLayer);
+        foreach (Collider2D enemy in hitEnemies)
+        {
+            Debug.Log("Enemy Hit: " + enemy.name);
+        }
+
+
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackLoc == null)
+            return;
+
+        Gizmos.DrawWireSphere(attackLoc.position, attackDis);
     }
 
     private void FixedUpdate()
@@ -158,17 +180,19 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy") && iFrame == 0)
         {
             health -= 10;
+            iFrame = 300;
+            //_rb.velocity = [-100, ];
             UpdateHealth();
         }
     }
 
     private void UpdateHealth()
     {
-        healthText.text = "Heath: " + health.ToString();
-
+        healthText.text = "Heath: " + health.ToString() + "   (I-Frame: " + iFrame.ToString() + ")";
+        //healthText.text = "Heath: " + health.ToString();
 
     }
 

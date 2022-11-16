@@ -183,7 +183,8 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") && iFrame == 0)
         {
             health -= 10;
-            iFrame = 300;
+            iFrame = 120;
+            //_rb.velocity = [-100, ];
             UpdateHealth();
         }
     }

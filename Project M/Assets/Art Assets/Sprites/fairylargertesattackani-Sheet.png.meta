@@ -1,7 +1,40 @@
 fileFormatVersion: 2
 guid: bf3165a2d56874f4fa1f8c5389f7473e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4436814666732016563
+    second: Fairy_Attack 0
+  - first:
+      213: -1755458961817931940
+    second: Fairy_Attack 1
+  - first:
+      213: -6240000428732651946
+    second: Fairy_Attack 2
+  - first:
+      213: -26804848181965739
+    second: Fairy_Attack 3
+  - first:
+      213: -6364376041916135354
+    second: Fairy_Attack 4
+  - first:
+      213: 2175819288787765137
+    second: Fairy_Attack 5
+  - first:
+      213: 5654602420041770833
+    second: Fairy_Attack 6
+  - first:
+      213: 8278733571211630173
+    second: Fairy_Attack 7
+  - first:
+      213: 1525174350735901268
+    second: Fairy_Attack 8
+  - first:
+      213: -507409322314802474
+    second: Fairy_Attack 9
+  - first:
+      213: -1787419762915552515
+    second: Fairy_Attack 10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -32,7 +65,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -41,7 +74,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,7 +100,19 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -77,7 +122,238 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Fairy_Attack 0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 11
+        width: 24
+        height: 36
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ce13f51944d62c0800000000000000
+      internalID: -4436814666732016563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 9
+        width: 25
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fe013006b53a7e0800000000000000
+      internalID: -1755458961817931940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 8
+        width: 27
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656ea17cba01769a0800000000000000
+      internalID: -6240000428732651946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 8
+        width: 27
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c0bd1f125c0aff0800000000000000
+      internalID: -26804848181965739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 4
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 9
+        width: 25
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6480594b5b13da7a0800000000000000
+      internalID: -6364376041916135354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 5
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 11
+        width: 24
+        height: 36
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19743ab7d10123e10800000000000000
+      internalID: 2175819288787765137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 6
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 10
+        width: 26
+        height: 38
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15767a011fe297e40800000000000000
+      internalID: 5654602420041770833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 7
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 13
+        width: 29
+        height: 36
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d569b260258f3e270800000000000000
+      internalID: 8278733571211630173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 8
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 14
+        width: 29
+        height: 36
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4528624cdf18a2510800000000000000
+      internalID: 1525174350735901268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 9
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 15
+        width: 29
+        height: 36
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da54b3e8e155f8f0800000000000000
+      internalID: -507409322314802474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fairy_Attack 10
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 13
+        width: 27
+        height: 37
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2d7ee123fc137e0800000000000000
+      internalID: -1787419762915552515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

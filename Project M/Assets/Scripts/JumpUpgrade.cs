@@ -6,18 +6,22 @@ public class JumpUpgrade : MonoBehaviour
 {
 
     [SerializeField] private PlayerController player;
+   // [SerializeField] private GameObject item;
+
 
     private void Start()
     {
 
     }
 
-    private void OnCollisionEnter()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-  
-        player.addJump();
-        gameObject.active = false;
 
+        if (other.CompareTag("Player"))
+        {
+            player.addJump();
+            Destroy(gameObject);
+        }
     }
 
 

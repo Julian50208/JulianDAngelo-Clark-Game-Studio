@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: be7f176a54d0f834aa3db097f817f1a7
+guid: 60841c87139969a4f845231b27d48534
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3690553783030832917
-    second: Willow_0
+      213: 6526179700593678494
+    second: Sterling_Walk0
   - first:
-      213: -7642599191853313228
-    second: Willow_1
+      213: -3934694438743255481
+    second: Sterling_Walk1
   - first:
-      213: -3567280230309634697
-    second: Willow_2
+      213: -7298838728344391906
+    second: Sterling_Walk2
   - first:
-      213: 124244369941229291
-    second: Willow_3
+      213: 939135450955585817
+    second: Sterling_Walk3
+  - first:
+      213: -3645076009584150081
+    second: Sterling_Walk4
+  - first:
+      213: 5943524814952811940
+    second: Sterling_Walk5
+  - first:
+      213: -1934980875823790801
+    second: Sterling_Walk6
+  - first:
+      213: -5896605184596384670
+    second: Sterling_Walk7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -79,7 +91,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -91,7 +103,7 @@ TextureImporter:
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -103,85 +115,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Willow_0
+      name: Sterling_Walk0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 2
-        width: 41
-        height: 50
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 0
+        y: 4
+        width: 63
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be029f143e488ccc0800000000000000
-      internalID: -3690553783030832917
+      spriteID: e98504a4cd5a19a50800000000000000
+      internalID: 6526179700593678494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Willow_1
+      name: Sterling_Walk1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 2
+        x: 64
+        y: 0
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746d00f31482569c0800000000000000
+      internalID: -3934694438743255481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling_Walk2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 0
+        width: 48
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f2b24f8d055ba90800000000000000
+      internalID: -7298838728344391906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling_Walk3
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
         width: 36
-        height: 59
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43355e8f68800f590800000000000000
-      internalID: -7642599191853313228
+      spriteID: 9191f2687ba780d00800000000000000
+      internalID: 939135450955585817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Willow_2
+      name: Sterling_Walk4
       rect:
         serializedVersion: 2
-        x: 136
-        y: 2
-        width: 44
-        height: 61
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 262
+        y: 5
+        width: 52
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77dde12e7897e7ec0800000000000000
-      internalID: -3567280230309634697
+      spriteID: fb930758ea61a6dc0800000000000000
+      internalID: -3645076009584150081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Willow_3
+      name: Sterling_Walk5
       rect:
         serializedVersion: 2
-        x: 203
-        y: 2
-        width: 40
-        height: 61
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 322
+        y: 0
+        width: 55
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bee60bf989769b100800000000000000
-      internalID: 124244369941229291
+      spriteID: 4ad4bfc3454ab7250800000000000000
+      internalID: 5943524814952811940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling_Walk6
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 0
+        width: 51
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25495935219525e0800000000000000
+      internalID: -1934980875823790801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling_Walk7
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 0
+        width: 56
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264e76f73dc0b2ea0800000000000000
+      internalID: -5896605184596384670
       vertices: []
       indices: 
       edges: []

@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: 60841c87139969a4f845231b27d48534
+guid: 030d1c56a1e4b65498d82b370d88f217
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6526179700593678494
-    second: Sterling_Walk0
+      213: 6231752946963602181
+    second: Sterling_Idle0
   - first:
-      213: -3934694438743255481
-    second: Sterling_Walk1
+      213: 32274312100309630
+    second: Sterling_Idle1
   - first:
-      213: -7298838728344391906
-    second: Sterling_Walk2
+      213: -395782813513549765
+    second: Sterling_Idle2
   - first:
-      213: 939135450955585817
-    second: Sterling_Walk3
+      213: -1339657939536241898
+    second: Sterling_Idle
   - first:
-      213: -3645076009584150081
-    second: Sterling_Walk4
+      213: 2942735000283436008
+    second: Sterling_Idle4
   - first:
-      213: 5943524814952811940
-    second: Sterling_Walk5
+      213: 2171401879233166229
+    second: Sterling_Idle5
   - first:
-      213: -1934980875823790801
-    second: Sterling_Walk6
+      213: 441394805556356165
+    second: Sterling_Idle6
   - first:
-      213: -5896605184596384670
-    second: Sterling_Walk7
+      213: -2301656316929421656
+    second: Sterling_Idle7
+  - first:
+      213: 1374090181915180270
+    second: Sterling_Idle8
+  - first:
+      213: 3148287992340493078
+    second: Sterling_Idle9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,169 +121,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sterling_Walk0
+      name: Sterling_Idle0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4
-        width: 63
+        x: 5
+        y: 0
+        width: 53
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b52cbb942ab7650800000000000000
+      internalID: 6231752946963602181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling_Idle1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 53
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7aeb1cd059a27000800000000000000
+      internalID: 32274312100309630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling_Idle2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 53
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38f158c0a5e18af0800000000000000
+      internalID: -395782813513549765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling_Idle
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 53
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b1969a334986de0800000000000000
+      internalID: -1339657939536241898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling_Idle4
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 0
+        width: 53
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3d00834e1b6d820800000000000000
+      internalID: 2942735000283436008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sterling_Idle5
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 53
         height: 101
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e98504a4cd5a19a50800000000000000
-      internalID: 6526179700593678494
+      spriteID: 59bfe4c218e522e10800000000000000
+      internalID: 2171401879233166229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sterling_Walk1
+      name: Sterling_Idle6
       rect:
         serializedVersion: 2
-        x: 64
+        x: 389
         y: 0
-        width: 63
-        height: 105
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 53
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 746d00f31482569c0800000000000000
-      internalID: -3934694438743255481
+      spriteID: 544a3eeac36202600800000000000000
+      internalID: 441394805556356165
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sterling_Walk2
+      name: Sterling_Idle7
       rect:
         serializedVersion: 2
-        x: 137
+        x: 453
         y: 0
-        width: 48
-        height: 105
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 53
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1f2b24f8d055ba90800000000000000
-      internalID: -7298838728344391906
+      spriteID: 8ae436246cfde00e0800000000000000
+      internalID: -2301656316929421656
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sterling_Walk3
+      name: Sterling_Idle8
       rect:
         serializedVersion: 2
-        x: 210
+        x: 517
         y: 0
-        width: 36
-        height: 105
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 53
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9191f2687ba780d00800000000000000
-      internalID: 939135450955585817
+      spriteID: eecf76e7dbfb11310800000000000000
+      internalID: 1374090181915180270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sterling_Walk4
+      name: Sterling_Idle9
       rect:
         serializedVersion: 2
-        x: 262
-        y: 5
-        width: 52
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb930758ea61a6dc0800000000000000
-      internalID: -3645076009584150081
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sterling_Walk5
-      rect:
-        serializedVersion: 2
-        x: 322
+        x: 581
         y: 0
-        width: 55
-        height: 105
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 53
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ad4bfc3454ab7250800000000000000
-      internalID: 5943524814952811940
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sterling_Walk6
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 0
-        width: 51
-        height: 105
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f25495935219525e0800000000000000
-      internalID: -1934980875823790801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sterling_Walk7
-      rect:
-        serializedVersion: 2
-        x: 451
-        y: 0
-        width: 56
-        height: 105
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 264e76f73dc0b2ea0800000000000000
-      internalID: -5896605184596384670
+      spriteID: 613351aaf37f0bb20800000000000000
+      internalID: 3148287992340493078
       vertices: []
       indices: 
       edges: []

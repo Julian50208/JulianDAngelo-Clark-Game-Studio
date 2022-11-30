@@ -93,6 +93,14 @@ public class PlayerController : MonoBehaviour
             iFrame -= 1;
 
         _horizontalDirection = GetInput().x;
+        if (_horizontalDirection > 0f || _horizontalDirection < 0f)
+        {
+            _anim.SetBool("isMoving", true);
+        }
+        else
+        {
+            _anim.SetBool("isMoving", false);
+        }
         _verticalDirection = GetInput().y;
         if (Input.GetButtonDown("Jump")) _jumpBufferCounter = _jumpBufferLength;
         else _jumpBufferCounter -= Time.deltaTime;

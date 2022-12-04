@@ -95,7 +95,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -107,7 +107,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: 4
     textureCompression: 1
@@ -124,7 +136,7 @@ TextureImporter:
       name: Sterling_Idle0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 4
         y: 0
         width: 53
         height: 105
@@ -145,7 +157,7 @@ TextureImporter:
       name: Sterling_Idle1
       rect:
         serializedVersion: 2
-        x: 69
+        x: 70
         y: 0
         width: 53
         height: 105
@@ -251,7 +263,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 389
-        y: 0
+        y: 1
         width: 53
         height: 101
       alignment: 7
@@ -293,7 +305,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 517
-        y: 0
+        y: 1
         width: 53
         height: 103
       alignment: 7

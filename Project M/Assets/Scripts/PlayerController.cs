@@ -109,9 +109,14 @@ public class PlayerController : MonoBehaviour
         else _jumpBufferCounter -= Time.deltaTime;
         if (Input.GetButtonDown("Fire1")) _dashBufferCounter = _dashBufferLength;
         else _dashBufferCounter -= Time.deltaTime;
-        if (Input.GetButtonDown("Fire2"))
+        if (Input.GetButtonDown("Fire2") && _horizontalDirection == 0f)
         {
             Attack();
+            _anim.SetBool("isAttacking", true);
+        }
+        else
+        {
+            _anim.SetBool("isAttacking", false);
         }
         Animation();
     }

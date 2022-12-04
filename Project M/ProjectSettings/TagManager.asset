@@ -6,6 +6,7 @@ TagManager:
   tags:
   - JumpUpgrade
   - Enemy
+  - attack
   layers:
   - Default
   - TransparentFX

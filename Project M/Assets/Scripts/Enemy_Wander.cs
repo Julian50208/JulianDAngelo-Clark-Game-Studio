@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy_Wander : MonoBehaviour
 {
@@ -13,7 +14,6 @@ public class Enemy_Wander : MonoBehaviour
     private float _endPos;
 
     public bool _moveRight = true;
-
 
     // Use this for initialization
     public void Awake()

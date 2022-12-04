@@ -89,10 +89,13 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if(iFrame > 0)
+        if (iFrame > 0)
             iFrame -= 1;
 
         _horizontalDirection = GetInput().x;
+        _verticalDirection = GetInput().y;
+
+
         if (_horizontalDirection > 0f || _horizontalDirection < 0f)
         {
             _anim.SetBool("isMoving", true);
@@ -101,7 +104,7 @@ public class PlayerController : MonoBehaviour
         {
             _anim.SetBool("isMoving", false);
         }
-        _verticalDirection = GetInput().y;
+
         if (Input.GetButtonDown("Jump")) _jumpBufferCounter = _jumpBufferLength;
         else _jumpBufferCounter -= Time.deltaTime;
         if (Input.GetButtonDown("Fire1")) _dashBufferCounter = _dashBufferLength;
@@ -112,7 +115,18 @@ public class PlayerController : MonoBehaviour
         }
         Animation();
     }
+    /*
+    void Flip()
+    {
+        // Switch the way the player is labelled as facing
+        _facingRight = !_facingRight;
 
+        // Multiply the player's x local scale by -1
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
+    }
+    */
     private void Attack()
     {
         Debug.Log("Attack Attempted");
@@ -120,6 +134,7 @@ public class PlayerController : MonoBehaviour
         foreach (Collider2D enemy in hitEnemies)
         {
             Debug.Log("Enemy Hit: " + enemy.name);
+            Destroy(enemy.gameObject);
         }
 
 
@@ -191,6 +206,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") && iFrame == 0)
         {
             health -= 10;
+            iFrame = 200;
             iFrame = 120;
             //_rb.velocity = [-100, ];
             UpdateHealth();
@@ -248,6 +264,8 @@ public class PlayerController : MonoBehaviour
     {
         if (!_onGround && !_onWall)
             _extraJumpsValue--;
+
+        
 
         ApplyAirLinearDrag();
         _rb.velocity = new Vector2(_rb.velocity.x, 0f);

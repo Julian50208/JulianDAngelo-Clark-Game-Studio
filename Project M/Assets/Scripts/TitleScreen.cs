@@ -31,7 +31,7 @@ public class TitleScreen : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Level_Scene");
+        SceneManager.LoadScene("Section 1");
         TitleMenu = false;
         Game = true;
     }

@@ -33,7 +33,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Title()
     {
-        SceneManager.UnloadSceneAsync("Level_Scene");
+        SceneManager.UnloadSceneAsync("Section 1");
         SceneManager.LoadScene("title");
         Time.timeScale = 1.0f;
         //TitleMenu = true;

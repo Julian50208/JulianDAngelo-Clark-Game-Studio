@@ -1,3 +1,4 @@
-JulianDAngelo Game Studio
+Game Studio project lead by Julian DAngelo as part of his Interactive media arts degree
 
-This is the first build of the unity game
+"Metriodvania" is one semester, "Project M" is the last semester, which started from scratch.
+Project M is the better one
